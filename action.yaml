@@ -1,5 +1,5 @@
-name: 'GitHub Action for Codepush'
-author: 'Nishanth Shankar'
+name: 'GitHub Action for Codepush - MK'
+author: 'Marvin Kome'
 description: 'Wraps the appcenter CLI to enable common commands.'
 inputs:
   directory:
