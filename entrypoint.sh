@@ -2,6 +2,7 @@
 
 set -e
 
+echo "$*"
 cd "$1"
 
 if [ -z "$APPCENTER_ACCESS_TOKEN" ]; then
