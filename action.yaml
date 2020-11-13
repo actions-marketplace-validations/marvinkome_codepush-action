@@ -1,9 +1,14 @@
 name: 'GitHub Action for Codepush'
 author: 'Nishanth Shankar'
 description: 'Wraps the appcenter CLI to enable common commands.'
+inputs:
+  directory:
+    default: .
 branding:
   icon: 'package'
   color: 'gray-dark'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet }}
