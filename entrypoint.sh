@@ -2,7 +2,6 @@
 
 set -e
 
-echo "$*"
 cd "$1"
 
 if [ -z "$APPCENTER_ACCESS_TOKEN" ]; then
@@ -11,4 +10,4 @@ if [ -z "$APPCENTER_ACCESS_TOKEN" ]; then
 fi
 
 echo "PWD $(pwd)"
-sh -c "appcenter codepush $*"
+sh -c "appcenter codepush $2"
